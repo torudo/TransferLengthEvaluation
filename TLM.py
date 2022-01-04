@@ -221,7 +221,7 @@ def Plots_All(filepath,ausgabepath, Treat = "BLS", Type="n type", wannaprint = 0
         #plt.show()
         plt.close()
 
-
+        # From here the evaluation of the slopes begins
         fig, ax = plt.subplots(figsize=(12,9))
         #print(slopes)
         x1 = [476,594,688,801,910,1013,1110]
@@ -271,65 +271,7 @@ def Plots_All(filepath,ausgabepath, Treat = "BLS", Type="n type", wannaprint = 0
 
 """Make changes here :) """
 
-#filepath = r'C:\Users\tobys\OneDrive - rwth-aachen.de\Masterarbeit Dokuments (TOAO)\Working Place\Messdaten\03 More Yak\20210715_TLM_controleptype\20210715_p-Type 0BAA'
-#ausgabepath = r'C:\Users\tobys\OneDrive - rwth-aachen.de\Masterarbeit Dokuments (TOAO)\Working Place\Messdaten\03 More Yak\20210715_TLM_controleptype\Auswertung'
-#Plots_All(filepath,ausgabepath, Treat = "00BAA", Type="20210715_p-Type 0BAA Plots", wannaprint = 0)
-
-
-#filepath = r'C:\Users\tobys\OneDrive - rwth-aachen.de\Masterarbeit Dokuments (TOAO)\Working Place\Messdaten\03 More Yak\20210715_TLM_controleptype\20210707_p-type ALS'
-#ausgabepath = r'C:\Users\tobys\OneDrive - rwth-aachen.de\Masterarbeit Dokuments (TOAO)\Working Place\Messdaten\03 More Yak\20210715_TLM_controleptype\Auswertung'
-#Plots_All(filepath,ausgabepath, Treat = "ALS", Type="20210707_p-type ALS", wannaprint = 0)
-
-
-#filepath = r'C:\Users\tobys\OneDrive - rwth-aachen.de\Masterarbeit Dokuments (TOAO)\Working Place\Messdaten\03 More Yak\20210715_TLM_controleptype\20210715p-Type 01AAA'
-#ausgabepath = r'C:\Users\tobys\OneDrive - rwth-aachen.de\Masterarbeit Dokuments (TOAO)\Working Place\Messdaten\03 More Yak\20210715_TLM_controleptype\Auswertung'
-#Plots_All(filepath,ausgabepath, Treat = "01AAA", Type="20210715p-Type 01AAA Plots", wannaprint = 0)
-
-
-# filepath = r'C:\Users\tobys\OneDrive - rwth-aachen.de\Masterarbeit Dokuments (TOAO)\Working Place\Messdaten\03 More Yak\20210715_TLM_controleptype\20210719_TLM'
-# ausgabepath = r'C:\Users\tobys\OneDrive - rwth-aachen.de\Masterarbeit Dokuments (TOAO)\Working Place\Messdaten\03 More Yak\20210715_TLM_controleptype\Auswertung_2'
-# Plots_All(filepath,ausgabepath, Treat = "longannealing", Type="20210719p-TypelongPlots", wannaprint = 0)
-
-
-# filepath = r"C:\Users\tobys\Desktop\Auswertung\TLM_values\20210812_TLM ptype"
-# ausgabepath = r"C:\Users\tobys\Desktop\Auswertung\TLM_values\img"
-# Plots_All(filepath,ausgabepath, Treat = "longannealing", Type="20210719p-TypelongPlots", wannaprint = 0)
-
-# filepath = r"C:\Users\tobys\Desktop\Auswertung\TLM_values\20210812_1LC\1LS measure"
-# ausgabepath = r"C:\Users\tobys\Desktop\Auswertung\TLM_values\20210812_1LC"
-# Plots_All(filepath,ausgabepath, Treat = "longannealing", Type="20210719p-TypelongPlots", wannaprint = 0)
-
-#filepath = r"C:\Users\tobys\Desktop\Auswertung\TLM_values\20210812_1LC_1AN\werte"
-#ausgabepath = r"C:\Users\tobys\Desktop\Auswertung\TLM_values\20210812_1LC_1AN\ausgabe"
-#Plots_All(filepath,ausgabepath, Treat = "longannealing", Type="20210719p-TypelongPlots", wannaprint = 0)
-
-# filepath = r"C:\Users\tobys\Desktop\Auswertung\TLM_values\20210812_1LC_1AN_2LC\werte"
-# ausgabepath = r"C:\Users\tobys\Desktop\Auswertung\TLM_values\20210812_1LC_1AN_2LC\ausgabe"
-# Plots_All(filepath,ausgabepath, Treat = filepath.split("\\")[-2], Type=filepath.split("\\")[-2]+"Plots", wannaprint = 0)
-
-# filepath = r"C:\Users\tobys\Desktop\Auswertung\TLM_values\20210812_1LC_1AN_2LC_2AN\werte"
-# ausgabepath = r"C:\Users\tobys\Desktop\Auswertung\TLM_values\20210812_1LC_1AN_2LC_2AN\ausgabe"
-# Plots_All(filepath,ausgabepath, Treat = filepath.split("\\")[-2], Type=filepath.split("\\")[-2]+"Plots", wannaprint = 0)
-
-#filepath = r"C:\Users\tobys\Desktop\Auswertung\TLM_values\20210812_1LC_1AN_2LC_2AN_3LC\werte"
-#ausgabepath = r"C:\Users\tobys\Desktop\Auswertung\TLM_values\20210812_1LC_1AN_2LC_2AN_3LC\ausgabe"
-#Plots_All(filepath,ausgabepath, Treat = filepath.split("\\")[-2], Type=filepath.split("\\")[-2]+"Plots", wannaprint = 0)
-
-# If you dont wanna use it on all data in a folder use this dunktion here:
-# filepath = r"C:\Users\tobys\OneDrive - rwth-aachen.de\Masterarbeit Dokuments (TOAO)\Working Place\TLM Auswertungtool\TLM\data"
-# filename = r"\21dhrw_TL_TCOAg_BLS.csv"
-# ausgabepath = r"..\TLM for Bin\TLM\results_plots"
-# Plots_single(filepath,filename,ausgabepath, Treat = "ALS", Type="put_name_here", wannaprint = 1)
-
-
-##### N-type
-ausgabepath = r"C:\Users\tobys\Documents\Auswertung\TLM_ntype"
-
-filepath = r"C:\Users\tobys\Documents\Auswertung\TLM_ntype\20210812_ntype_afterstored"
-Plots_All(filepath,ausgabepath, Treat = filepath.split("\\")[-1], Type=filepath.split("\\")[-1]+"Plots", wannaprint = 0)
-
-filepath = r"C:\Users\tobys\Documents\Auswertung\TLM_ntype\20210812_ntype_longdarkAN"
-Plots_All(filepath,ausgabepath, Treat = filepath.split("\\")[-1], Type=filepath.split("\\")[-1]+"Plots", wannaprint = 0)
-
-filepath = r"C:\Users\tobys\Documents\Auswertung\TLM_ntype\20210812_ntype_LC"
-Plots_All(filepath,ausgabepath, Treat = filepath.split("\\")[-1], Type=filepath.split("\\")[-1]+"Plots", wannaprint = 0)
+ausgabepath = r"..."
+filepath = r"..."
+treatment = "filepath.split("\\")[-1]"
+Plots_All(filepath, ausgabepath, Treat = treatment, Type=treatment+"Plots", wannaprint = 0)
